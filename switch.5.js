@@ -20,6 +20,7 @@ switch (operator) {
         hasil = angka1 % angka2;
         break;
     default:
-        hasil = "Error: Operator tidak valid. Gunakan (+, -, *, /, atau %)";
+        console.log("Tidak valid. Gunakan (+, -, *, /, atau %)");
+        break;
 }
 console.log(`${angka1} ${operator} ${angka2} = ${hasil}`);
