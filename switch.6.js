@@ -1,15 +1,18 @@
 let warna = "kuning";
+let instruksi;
 
 switch (warna) {
-  case "merah":
-    console.log("Berhenti!");
-    break;
-  case "kuning":
-    console.log("Hati-hati!");
-    break;
-  case "hijau":
-    console.log("Jalan!");
-    break;
-  default:
-    console.log("Lampu rusak!");
+    case "merah":
+        instruksi = "Berhenti total";
+        break;
+    case "kuning":
+        instruksi = "Hati-hati, bersiap berhenti";
+        break;
+    case "hijau":
+        instruksi = "Jalan, perhatikan kondisi lalu lintas";
+        break;
+    default:
+        instruksi = "Lampu rusak, harap berhati-hati penuh!";
 }
+
+console.log(`Lampu ${warna}: ${instruksi}`);
