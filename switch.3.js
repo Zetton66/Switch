@@ -1,22 +1,24 @@
-let grade = "B";
-// Tulis kode switch statement di sini
+let grade = "B"; 
+let deskripsiNilai;
 
 switch (grade) {
-  case "A":
-    console.log("Sangat Baik");
-    break;
-  case "B":
-    console.log("Baik");
-    break;
-  case "C":
-    console.log("Cukup");
-    break;
-  case "D":
-    console.log("Kurang");
-    break;
-  case "E":
-    console.log("Sangat Kurang");
-    break;
-  default:
-    console.log("Grade tidak valid");
+    case "A":
+        deskripsiNilai = "Sangat Baik";
+        break;
+    case "B":
+        deskripsiNilai = "Baik";
+        break;
+    case "C":
+        deskripsiNilai = "Cukup";
+        break;
+    case "D":
+        deskripsiNilai = "Kurang";
+        break;
+    case "E":
+        deskripsiNilai = "Sangat Kurang";
+        break;
+    default:
+        deskripsiNilai = "Grade tidak valid";
 }
+
+console.log(`Grade ${grade}: ${deskripsiNilai}`);
